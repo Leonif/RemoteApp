@@ -3,27 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		792BA4B0251E4D7400F34670 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792BA4AF251E4D7400F34670 /* AppDelegate.swift */; };
 		792BA4B2251E4D7400F34670 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792BA4B1251E4D7400F34670 /* SceneDelegate.swift */; };
-		792BA4B4251E4D7400F34670 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792BA4B3251E4D7400F34670 /* ViewController.swift */; };
-		792BA4B7251E4D7400F34670 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 792BA4B5251E4D7400F34670 /* Main.storyboard */; };
+		792BA4B4251E4D7400F34670 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792BA4B3251E4D7400F34670 /* MainViewController.swift */; };
 		792BA4B9251E4D7700F34670 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 792BA4B8251E4D7700F34670 /* Assets.xcassets */; };
 		792BA4BC251E4D7700F34670 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 792BA4BA251E4D7700F34670 /* LaunchScreen.storyboard */; };
+		792BA4CD251E5BD700F34670 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792BA4CC251E5BD700F34670 /* WeatherService.swift */; };
+		792BA4D4251E63F000F34670 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792BA4D3251E63F000F34670 /* MainView.swift */; };
+		AB9E139024921A03E6C57615 /* Pods_RemoteApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B50DDF0291659E5D11AE2FA7 /* Pods_RemoteApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		792BA4AC251E4D7400F34670 /* RemoteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		792BA4AF251E4D7400F34670 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		792BA4B1251E4D7400F34670 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		792BA4B3251E4D7400F34670 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		792BA4B6251E4D7400F34670 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		792BA4B3251E4D7400F34670 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		792BA4B8251E4D7700F34670 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		792BA4BB251E4D7700F34670 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		792BA4BD251E4D7700F34670 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		792BA4CC251E5BD700F34670 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		792BA4D3251E63F000F34670 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		8BED7ABA18EEF0D827DCA56F /* Pods-RemoteApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteApp.debug.xcconfig"; path = "Target Support Files/Pods-RemoteApp/Pods-RemoteApp.debug.xcconfig"; sourceTree = "<group>"; };
+		B50DDF0291659E5D11AE2FA7 /* Pods_RemoteApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemoteApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB946922F77620542A28F2BA /* Pods-RemoteApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteApp.release.xcconfig"; path = "Target Support Files/Pods-RemoteApp/Pods-RemoteApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB9E139024921A03E6C57615 /* Pods_RemoteApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0721EF33F0810EA8A1C01680 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B50DDF0291659E5D11AE2FA7 /* Pods_RemoteApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		792BA4A3251E4D7400F34670 = {
 			isa = PBXGroup;
 			children = (
 				792BA4AE251E4D7400F34670 /* RemoteApp */,
 				792BA4AD251E4D7400F34670 /* Products */,
+				EED3313C38E10D7FD1E35313 /* Pods */,
+				0721EF33F0810EA8A1C01680 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +73,49 @@
 		792BA4AE251E4D7400F34670 /* RemoteApp */ = {
 			isa = PBXGroup;
 			children = (
-				792BA4AF251E4D7400F34670 /* AppDelegate.swift */,
-				792BA4B1251E4D7400F34670 /* SceneDelegate.swift */,
-				792BA4B3251E4D7400F34670 /* ViewController.swift */,
-				792BA4B5251E4D7400F34670 /* Main.storyboard */,
-				792BA4B8251E4D7700F34670 /* Assets.xcassets */,
+				79F9A3B52522430A00E0C700 /* Supported Files */,
 				792BA4BA251E4D7700F34670 /* LaunchScreen.storyboard */,
-				792BA4BD251E4D7700F34670 /* Info.plist */,
+				792BA4D1251E5BED00F34670 /* Modules */,
+				792BA4CF251E5BDE00F34670 /* Services */,
 			);
 			path = RemoteApp;
+			sourceTree = "<group>";
+		};
+		792BA4CF251E5BDE00F34670 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				792BA4CC251E5BD700F34670 /* WeatherService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		792BA4D1251E5BED00F34670 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				792BA4B3251E4D7400F34670 /* MainViewController.swift */,
+				792BA4D3251E63F000F34670 /* MainView.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		79F9A3B52522430A00E0C700 /* Supported Files */ = {
+			isa = PBXGroup;
+			children = (
+				792BA4B8251E4D7700F34670 /* Assets.xcassets */,
+				792BA4AF251E4D7400F34670 /* AppDelegate.swift */,
+				792BA4B1251E4D7400F34670 /* SceneDelegate.swift */,
+				792BA4BD251E4D7700F34670 /* Info.plist */,
+			);
+			path = "Supported Files";
+			sourceTree = "<group>";
+		};
+		EED3313C38E10D7FD1E35313 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8BED7ABA18EEF0D827DCA56F /* Pods-RemoteApp.debug.xcconfig */,
+				FB946922F77620542A28F2BA /* Pods-RemoteApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +125,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 792BA4C0251E4D7700F34670 /* Build configuration list for PBXNativeTarget "RemoteApp" */;
 			buildPhases = (
+				9FC61BEA1DD38611AAE38AE6 /* [CP] Check Pods Manifest.lock */,
 				792BA4A8251E4D7400F34670 /* Sources */,
 				792BA4A9251E4D7400F34670 /* Frameworks */,
 				792BA4AA251E4D7400F34670 /* Resources */,
+				906E02A0DA7D5DBEAC1DEF69 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,19 +179,62 @@
 			files = (
 				792BA4BC251E4D7700F34670 /* LaunchScreen.storyboard in Resources */,
 				792BA4B9251E4D7700F34670 /* Assets.xcassets in Resources */,
-				792BA4B7251E4D7400F34670 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		906E02A0DA7D5DBEAC1DEF69 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RemoteApp/Pods-RemoteApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RemoteApp/Pods-RemoteApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RemoteApp/Pods-RemoteApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FC61BEA1DD38611AAE38AE6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RemoteApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		792BA4A8251E4D7400F34670 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				792BA4B4251E4D7400F34670 /* ViewController.swift in Sources */,
+				792BA4CD251E5BD700F34670 /* WeatherService.swift in Sources */,
+				792BA4B4251E4D7400F34670 /* MainViewController.swift in Sources */,
 				792BA4B0251E4D7400F34670 /* AppDelegate.swift in Sources */,
+				792BA4D4251E63F000F34670 /* MainView.swift in Sources */,
 				792BA4B2251E4D7400F34670 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,14 +242,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		792BA4B5251E4D7400F34670 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				792BA4B6251E4D7400F34670 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		792BA4BA251E4D7700F34670 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,12 +371,13 @@
 		};
 		792BA4C1251E4D7700F34670 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BED7ABA18EEF0D827DCA56F /* Pods-RemoteApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 379294YDPQ;
-				INFOPLIST_FILE = RemoteApp/Info.plist;
+				INFOPLIST_FILE = "RemoteApp/Supported Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,12 +391,13 @@
 		};
 		792BA4C2251E4D7700F34670 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB946922F77620542A28F2BA /* Pods-RemoteApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 379294YDPQ;
-				INFOPLIST_FILE = RemoteApp/Info.plist;
+				INFOPLIST_FILE = "RemoteApp/Supported Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
